@@ -1,0 +1,232 @@
+@media (max-width: 768px) {
+    // ОБЩИЕ
+    .container {
+        max-width: none;
+        margin: 0 auto;
+        padding: 0 20px 0;
+        text-align: center;
+    }
+
+    // main
+
+    .intro {
+        &__title {
+            font-size: 19px;
+        }
+        &__text {
+            padding: 0 0 40px 0;
+        }
+        &__button {
+            min-width: 200px;
+            min-height: 40px;
+        }
+        &__button-text {
+            font-size: 13px;
+        }
+    }
+
+    .auction {
+        &__wrap {
+            display: block;
+        }
+        &__figure-wrap {
+            max-width: 75px;
+            max-height: 75px;
+        }
+        &__figure-box {
+            min-width: 100px;
+            min-height: 75px;
+        }
+        &__container {
+            padding: 50px 20px 0;
+        }
+        &__title {
+            font-size: 24px;
+        }
+    }
+    .lot {
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 30px;
+        max-width: 250px;
+
+        &__figure {
+            top: 0;
+        }
+
+        &__tittle {
+            position: relative;
+        }
+    }
+
+    .all-lot {
+        &__list {
+            justify-content: center;
+        }
+
+        &__item {
+            width: 160px;
+            height: 160px;
+            margin: 50px 10px 0;
+
+            :after {
+                display: none;
+            }
+
+            &:nth-last-child(1) {
+                :before {
+                    display: none;
+                }
+            }
+        }
+        &__link {
+            img {
+                width: 30%;
+            }
+
+            h3 {
+                font-size: 17px;
+            }
+        }
+
+        &__container {
+            padding: 50px 20px 0;
+        }
+    }
+
+    .description {
+        &__container {
+            padding: 180px 10px 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+
+            img {
+                transform: rotate(90deg);
+                max-height: 100%;
+                max-width: 70%;
+                position: absolute;
+                top: -80px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            padding: 0 20px;
+            text-align: left;
+
+            &:nth-last-child(1) {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .services {
+        &__container {
+            padding: 40px 20px 25px;
+        }
+        &__subtitle {
+            font-size: 32px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+    }
+
+    .promo {
+        &__title {
+            font-size: 15px;
+        }
+        &__img {
+            max-width: 100px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__button-text {
+            font-size: 15px;
+        }
+    }
+
+    .quotes {
+        &__container {
+            padding: 35px 20px 0;
+        }
+        &__subtitle {
+            font-size: 32px;
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__img {
+            max-width: 144px;
+            max-height: 200px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+        &__subtext {
+            font-size: 15px;
+            line-height: 25px;
+
+            &:nth-child(2) {
+                margin: 20px 0 0;
+            }
+        }
+    }
+
+    .aside {
+        &__content {
+            margin: 0;
+        }
+        &__container {
+            padding: 20px 25px 0;
+        }
+        &__box {
+            padding: 0 30px 0 0;
+
+            &:nth-child(even) {
+                padding: 0 0 0 30px;
+            }
+        }
+        &__box-title {
+            font-size: 26px;
+        }
+        &__h3 {
+            font-size: 13px;
+        }
+        &__text {
+            font-size: 13px;
+        }
+        &__form {
+            max-width: 250px;
+            min-height: 40px;
+        }
+        &__emeil {
+            min-width: 150px;
+        }
+        &__btn-wrap {
+            min-width: 80px;
+        }
+        &__btn {
+            margin: 0 7px 0 17px;
+            font-size: 18px;
+        }
+    }
+
+    .footer {
+        &__container {
+            padding: 20px 20px 0;
+        }
+        &__item {
+            display: none;
+        }
+        &__textL {
+            font-size: 11px;
+        }
+        &__textR {
+            font-size: 11px;
+        }
+    }
+}

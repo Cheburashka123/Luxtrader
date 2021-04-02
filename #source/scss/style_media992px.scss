@@ -1,0 +1,299 @@
+@media (max-width: 992px) {
+    // ОБЩИЕ
+    .container {
+        max-width: 750px;
+    }
+
+    .border {
+        &__figureL {
+            width: 40%;
+        }
+
+        &__figureR {
+            width: 40%;
+        }
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    // main
+    .header {
+        &__burger {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            z-index: 55;
+
+            &:before,
+            &:after {
+                content: "";
+                background-color: #ffffff;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                height: 2px;
+                border-radius: 5px;
+                transition: all 0.3s ease 0s;
+            }
+
+            &:before {
+                top: 0;
+            }
+
+            &:after {
+                bottom: 0;
+            }
+
+            span {
+                position: absolute;
+                background-color: #ffffff;
+                left: 0;
+                top: calc(50% - 1px);
+                width: 100%;
+                height: 2px;
+                transition: all 0.3s ease 0s;
+            }
+        }
+
+        &:before {
+            z-index: 5;
+        }
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: initial;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #1c242a;
+            top: -200%;
+            transition: all 0.3s ease 0s;
+            overflow: auto;
+
+            &.active {
+                top: 73px;
+                padding: 0 20px 50px;
+            }
+        }
+
+        &__region {
+            margin: 40px 0;
+            font-size: 25px;
+        }
+        &__account {
+            margin: 15px 0 10px;
+
+            a {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    .nav {
+        min-width: initial;
+        &__wrap-list {
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            min-width: initial;
+        }
+
+        &__list {
+            margin: 10px 0 0 0;
+            font-size: 25px;
+            line-height: 2;
+        }
+    }
+
+    .active {
+        &:before {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        &:after {
+            transform: rotate(-45deg);
+            bottom: 8px;
+        }
+
+        span {
+            transform: scale(0);
+        }
+    }
+
+    .intro {
+        &__subtitle {
+            font-size: 35px;
+        }
+        &__title {
+            font-size: 25px;
+            padding: 23px 0 27px 0;
+        }
+    }
+
+    .auction {
+        &__container {
+            padding: 85px 0 20px 0;
+        }
+        &__subtitile {
+            font-size: 35px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+
+        &__wrap {
+            margin: 42px 0;
+            justify-content: space-between;
+        }
+    }
+
+    .lot {
+        &:last-child {
+            margin: 42px auto 0;
+        }
+
+        &__figure {
+            top: -50px;
+        }
+    }
+
+    .all-lot {
+        &__title {
+            min-width: 80px;
+            min-height: 80px;
+            font-size: 17px;
+        }
+
+        &__list {
+            max-width: 583px;
+        }
+
+        &__item {
+            &:nth-child(odd) {
+                :after {
+                    content: url("../img/icon/all-lot_after.png");
+                    position: absolute;
+                    top: -40px;
+                    right: calc(-25% - -10px);
+                }
+            }
+
+            &:nth-child(even) {
+                :after {
+                    content: "";
+                }
+            }
+
+            &:nth-last-child(2) {
+                :before {
+                    display: block;
+                }
+            }
+            &:nth-last-child(3) {
+                :before {
+                    display: none;
+                }
+            }
+
+            &:nth-last-child(1) {
+                :before {
+                    content: url("../img/icon/all-lot_after-down.png");
+                    position: absolute;
+                    bottom: -30px;
+                    left: 112%;
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+    }
+
+    .services {
+        &__subtitle {
+            font-size: 35px;
+        }
+        &__title {
+            font-size: 29px;
+        }
+    }
+
+    .promo {
+        margin: 50px 25px 0;
+        width: 25%;
+
+        &__title {
+            text-align: center;
+            font-size: 19px;
+        }
+
+        &__button-line {
+            width: 20px;
+        }
+        &__button-text {
+            font-size: 17px;
+        }
+    }
+
+    .quotes {
+        &__subtitle {
+            font-size: 35px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__img {
+            margin: 0 30px 0 0;
+        }
+    }
+
+    .aside {
+        &__content {
+            margin: 0;
+        }
+        &__box {
+            padding: 0 30px 0 0;
+
+            &:nth-child(even) {
+                padding: 0 0 0 30px;
+            }
+        }
+        &__form {
+            max-width: 300px;
+        }
+        &__emeil {
+            min-width: 200px;
+        }
+        &__btn-wrap {
+            min-width: 100px;
+        }
+    }
+
+    .footer {
+        &__logotype {
+            max-width: 150px;
+        }
+
+        &__item {
+            max-width: 420px;
+        }
+        &__list {
+            font-size: 12px;
+        }
+
+        &__phone {
+            font-size: 30px;
+
+            sup {
+                font-size: 15px;
+            }
+        }
+    }
+}
